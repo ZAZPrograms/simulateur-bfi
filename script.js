@@ -129,4 +129,6 @@ function calculer() {
   bar.style.backgroundColor = current.color;
 }
 
-renderInputs();
+window.addEventListener("DOMContentLoaded", () => {
+  renderInputs();
+});
