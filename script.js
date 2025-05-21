@@ -1,6 +1,6 @@
 const data = [
-  { name: "LVA ou LVB", coef: 6, cc: true, trimestres: [1, 2, 3] },
-  { name: "Histoire-Géo ou Ens. Scientifique", coef: 6, cc: true, trimestres: [1, 2, 3] },
+  { name: "LVA ou LVB", coef: 6, cc: true, trimestres: [1, 2, 3, 4, 5, 6] },
+  { name: "Histoire-Géo ou Ens. Scientifique", coef: 6, cc: true, trimestres: [1, 2, 3, 4, 5, 6] },
   { name: "EMC", coef: 2, cc: true, trimestres: [1, 2, 3] },
   { name: "EPS", coef: 6, cc: true, trimestres: [4, 5, 6] },
   { name: "Spécialité 3", coef: 8, cc: true, trimestres: [1, 2, 3] },
