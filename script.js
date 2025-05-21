@@ -104,17 +104,17 @@ function calculer() {
     mention.textContent = "-";
     pointsRestants.textContent = "-";
     bar.style.width = "0%";
-    bar.style.backgroundColor = "var(--mention-rouge)";
+    bar.style.backgroundColor = "#ef4444";
     return;
   }
 
   const mentions = [
-    { seuil: 18, label: "Félicitations du Jury", color: "var(--mention-violet)" },
-    { seuil: 16, label: "Très Bien", color: "var(--mention-bleu)" },
-    { seuil: 14, label: "Bien", color: "var(--mention-vert)" },
-    { seuil: 12, label: "Assez Bien", color: "var(--mention-jaune)" },
-    { seuil: 10, label: "Passable", color: "var(--mention-orange)" },
-    { seuil: 0,  label: "Ajourné", color: "var(--mention-rouge)" },
+    { seuil: 18, label: "Félicitations du Jury", color: "#8b5cf6" },
+    { seuil: 16, label: "Très Bien", color: "#3b82f6" },
+    { seuil: 14, label: "Bien", color: "#22c55e" },
+    { seuil: 12, label: "Assez Bien", color: "#eab308" },
+    { seuil: 10, label: "Passable", color: "#f97316" },
+    { seuil: 0,  label: "Ajourné", color: "#ef4444" },
   ];
 
   const next = mentions.find(m => moyenne < m.seuil);
@@ -125,7 +125,7 @@ function calculer() {
   pointsRestants.textContent = points;
 
   const percent = Math.min(100, (moyenne / 20) * 100);
-  bar.style.width = `${percent}%";
+  bar.style.width = `${percent}%`;
   bar.style.backgroundColor = current.color;
 }
 
